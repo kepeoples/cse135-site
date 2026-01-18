@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin Peoples | CSE 135</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      background-color: #fafafa;
+    }
+    header {
+      margin-bottom: 2rem;
+    }
+    section {
+      max-width: 800px;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 2rem;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kevin Peoples</h1>
+  <p><strong>CSE 135 – Winter 2026</strong></p>
+  <p><a href="/">← Back to Team Home</a></p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      Hi! My name is Kevin Peoples and I am a Computer Science student at UC San Diego.
+      I am currently taking CSE 135 to learn how modern web systems are deployed,
+      secured, and maintained at scale.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Technical Interests</h2>
+    <ul>
+      <li>Web development (HTML, CSS, JavaScript)</li>
+      <li>Backend systems and APIs</li>
+      <li>Cybersecurity and secure web design</li>
+      <li>Cloud infrastructure and DevOps</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Fun Facts</h2>
+    <ul>
+      <li>I enjoy building projects that combine frontend and security concepts.</li>
+      <li>I like learning how real-world websites are deployed and scaled.</li>
+      <li>I prefer clean, simple designs that focus on usability.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Dynamic Content</h2>
+    <p>This page was loaded at:</p>
+    <p><strong id="time"></strong></p>
+  </div>
+</section>
+
+<footer>
+  <p>Last updated dynamically using JavaScript.</p>
+</footer>
+
+<script>
+  document.getElementById("time").textContent = new Date().toString();
+</script>
+
+</body>
+</html>
