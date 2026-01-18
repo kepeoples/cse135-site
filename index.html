@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSE 135 - Team Home</title>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+    .grid { display: grid; grid-template-columns: 1fr 320px; gap: 2rem; align-items: start; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 1rem; background: #fafafa; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <main>
+      <h1>CSE 135</h1>
+      <div>Winter 2026</div>
+
+      <h2>Homework 1</h2>
+      <ul>
+        <li><a href="/hw1/php/">PHP</a> (TBD)</li>
+        <li><a href="/hw1/node/">Node</a> (TBD)</li>
+        <li><a href="/hw1/analytics/">Analytics</a> (TBD)</li>
+      </ul>
+
+      <h2>Homework 2</h2>
+      <div class="card">TBD</div>
+
+      <h2>Analytics App</h2>
+      <div class="card">TBD</div>
+
+      <p>Last updated: <span id="ts"></span></p>
+    </main>
+
+    <aside class="card">
+      <h2>Team KP</h2>
+      <p>Team Members</p>
+      <ul>
+        <li><a href="/members/kevin.html">Kevin Peoples</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <script>
+    document.getElementById("ts").textContent = new Date().toString();
+  </script>
+</body>
+</html>
